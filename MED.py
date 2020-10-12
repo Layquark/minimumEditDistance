@@ -52,7 +52,7 @@ def miniEditDistance(str1,str2):
             col=col-1;
             continue
         if List[(row-1)*len2+col-1]=="replace":
-            print('%-10s'%str1[0:row],'%-10s'%str2[0:col],"replace ",str1[row],"with ",str2[col]);
+            print('%-10s'%str1[0:row],'%-10s'%str2[0:col],"replace ",str1[row-1],"with ",str2[col-1]);
             row=row-1;
             col=col-1;
             continue
